@@ -95,7 +95,7 @@ contract VendingMachine {
         return address(this).balance;
     }
     
-    function getWinnerByLottery(uint luckyDraw) public view returns (address payable) {
+    function getWinnerByID(uint luckyDraw) public view returns (address payable) {
         return luckyDrawHistory[luckyDraw];
     }
 
